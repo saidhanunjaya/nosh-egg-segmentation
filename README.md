@@ -3,7 +3,7 @@
 CV intern task: segmenting eggs in photos with a pretrained zero-shot pipeline and a classical (non-deep-learning) pipeline, evaluating the classical pipeline against the pretrained one, and tracking eggs in video.
 
 - **Author:** Sai Dhananjaya
-- **Full report:** see `report.pdf` in this repo for complete methodology, experiment logs, and figures.
+- **Full report:** see `report.pdf` in this repo, or view it on [Google Drive](https://drive.google.com/file/d/1w9duSYIKSJmNavPIwfnuVqRcjzlIbJuB/view?usp=sharing), for complete methodology, experiment logs, and figures.
 - **Task 4 output video:** [Google Drive link](https://drive.google.com/file/d/15EBvtN9CcjhM4N869Stfo_eskTJgfvig/view?usp=sharing)
 
 ## Contents
