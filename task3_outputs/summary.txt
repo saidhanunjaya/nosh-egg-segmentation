@@ -1,0 +1,22 @@
+Images evaluated: 110  (missing/unmatched: 0)
+
+IoU       mean=0.3436  median=0.2685  min=0.0000  max=0.9943
+Dice      mean=0.4422  median=0.4234
+Precision mean=0.4312  median=0.2873
+Recall    mean=0.7217  median=0.9003
+
+IoU >= 0.75 (good):      19 / 110
+IoU 0.5-0.75 (ok):       7 / 110
+IoU < 0.5 (poor/failed): 84 / 110
+
+Worst 10 by IoU:
+  not_damaged_102_jpg.rf.8d754cbc174c6cb6fb1b5c1929edcbb1: iou=0.000 dice=0.000 precision=1.000 recall=0.000
+  not_damaged_108_jpg.rf.de0bd2447ade8d891625ac0dd055667a: iou=0.000 dice=0.000 precision=0.000 recall=0.000
+  not_damaged_123_jpg.rf.11d40a86277d3ab3fce1c5c6cbf14db0: iou=0.000 dice=0.000 precision=0.000 recall=0.000
+  not_damaged_134_jpg.rf.fb4e9c442527db9e71d4a95584773fa2: iou=0.000 dice=0.000 precision=1.000 recall=0.000
+  not_damaged_139_jpg.rf.9f18c65b30035092401a5281a03b7124: iou=0.000 dice=0.000 precision=0.000 recall=0.000
+  not_damaged_154_jpg.rf.1ad087e824bbaae4f2c8218624f83c1a: iou=0.000 dice=0.000 precision=0.000 recall=0.000
+  not_damaged_39_jpg.rf.81c4c633444db832268298ddae1010d6: iou=0.000 dice=0.000 precision=0.000 recall=0.000
+  not_damaged_42_jpg.rf.6626de5325fbf9ad4fec739b2a4e29f3: iou=0.000 dice=0.000 precision=0.000 recall=0.000
+  not_damaged_44_jpg.rf.a4dbaabec5b64e4c34d874a6870964be: iou=0.000 dice=0.000 precision=0.000 recall=0.000
+  not_damaged_52_jpg.rf.d62840582d63156f7e346b41ab8895d5: iou=0.000 dice=0.000 precision=0.000 recall=0.000

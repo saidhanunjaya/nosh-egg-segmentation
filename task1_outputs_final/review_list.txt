@@ -1,0 +1,10 @@
+not_damaged_43_jpg.rf.66c31342150e751c30214786e72c8683.jpg	source: fallback-1
+not_damaged_116_jpg.rf.43fecd96347e2129115fceed65986cc9.jpg	source: manual
+not_damaged_117_jpg.rf.d25ded9e7408f9b89b3cfb3de581f6a6.jpg	source: manual
+not_damaged_124_jpg.rf.931f62b8d40a093039633b898e0e9114.jpg	source: fallback-1
+not_damaged_17_jpg.rf.7298154b15cab2942d3351120a4337d5.jpg	source: fallback-1
+not_damaged_18_jpg.rf.bc3fb0b05f8e3f72d25ae44db40362c0.jpg	source: fallback-1
+not_damaged_36_jpg.rf.4968de1c56728d9f7325771e3a7f7e3e.jpg	source: fallback-1
+not_damaged_135_jpg.rf.a6d81ffb82470e031fb3ab469c8f0db2.jpg	source: manual
+not_damaged_145_jpg.rf.5147bfde42f30a27504377fd5ef13b05.jpg	source: fallback-1
+not_damaged_40_jpg.rf.71ddd6e202abb9dd3dd4721b6d408cba.jpg	source: manual

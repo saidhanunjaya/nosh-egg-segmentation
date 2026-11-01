@@ -1,0 +1,48 @@
+Total images with valid GT mask: 110
+Multi-instance GT scenes overall (>=2 components, each >= 3% of mask area): 18 (16.4%)
+
+category                  n  multi-inst n  multi-inst %
+--------------------------------------------------------
+pass                     26             3         11.5%
+total_miss                2             1         50.0%
+disjoint_wrong_region    13             1          7.7%
+mislocalized              5             3         60.0%
+bleed_overseg            56             3          5.4%
+partial_underseg          7             7        100.0%
+mixed_moderate            1             0          0.0%
+
+Baseline (overall dataset) multi-instance rate: 16.4%  <- compare each category's % against this
+
+======================================================================
+Multi-instance members by category (for spot-checking)
+======================================================================
+
+[pass] multi-instance members (3):
+  not_damaged_142_jpg.rf.5b29be6bd5a6cfc192f51a5b580c1a07  n_instances=2  iou=0.766
+  not_damaged_148_jpg.rf.8a3e1c0e1dae236abe0e9a75a4882bda  n_instances=3  iou=0.891
+  not_damaged_115_jpg.rf.5e04f25a50022be8a5f0dbcfe42bc26f  n_instances=2  iou=0.981
+
+[total_miss] multi-instance members (1):
+  not_damaged_134_jpg.rf.fb4e9c442527db9e71d4a95584773fa2  n_instances=3  iou=0.000
+
+[disjoint_wrong_region] multi-instance members (1):
+  not_damaged_128_jpg.rf.95a7ef96dcc9e14fa7137708df6f2e60  n_instances=2  iou=0.000
+
+[mislocalized] multi-instance members (3):
+  not_damaged_113_jpg.rf.75e3389c0809c7c0f42fbfd25219e65e  n_instances=2  iou=0.089
+  not_damaged_114_jpg.rf.7ccf87a5610bafd963468463b2e2907c  n_instances=2  iou=0.170
+  not_damaged_103_jpg.rf.c0bd961caec5acf3a6582c9cb2551634  n_instances=3  iou=0.218
+
+[bleed_overseg] multi-instance members (3):
+  not_damaged_117_jpg.rf.d25ded9e7408f9b89b3cfb3de581f6a6  n_instances=2  iou=0.119
+  not_damaged_147_jpg.rf.f96813b608c83c8ca5fadbe68c1eefdb  n_instances=2  iou=0.126
+  not_damaged_129_jpg.rf.3cee5e92daed138fcdc13d9aa62c2785  n_instances=2  iou=0.241
+
+[partial_underseg] multi-instance members (7):
+  not_damaged_140_jpg.rf.5a28b6a69e229bf384854ec1e98b3f19  n_instances=3  iou=0.280
+  not_damaged_144_jpg.rf.a9435fb1769a2350dbdd400bcc46a4eb  n_instances=3  iou=0.283
+  not_damaged_105_jpg.rf.6b94b57d4e4cb521abbec55bb95c2a76  n_instances=3  iou=0.301
+  not_damaged_121_jpg.rf.0506fe180f5fed88ae65348130fb5192  n_instances=3  iou=0.305
+  not_damaged_133_jpg.rf.a386f448c321cfb45a902bab446a0536  n_instances=3  iou=0.322
+  not_damaged_136_jpg.rf.b91466d91f3e0005beb0e42acc9d5b83  n_instances=3  iou=0.430
+  not_damaged_132_jpg.rf.5deff743ad11d33750171617e116bd7a  n_instances=3  iou=0.449

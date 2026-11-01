@@ -1,0 +1,144 @@
+Total images: 110
+
+pass                    26 ( 23.6%)  mean_iou=0.833  median_pred/gt_area=0.96
+    definition: IoU >= 0.5
+total_miss               2 (  1.8%)  mean_iou=0.000  median_pred/gt_area=0.00
+    definition: Task 2 produced an empty mask
+disjoint_wrong_region   13 ( 11.8%)  mean_iou=0.000  median_pred/gt_area=1.38
+    definition: precision < 0.10 and recall < 0.10 (prediction is on something other than the egg)
+mislocalized             5 (  4.5%)  mean_iou=0.119  median_pred/gt_area=2.52
+    definition: precision < 0.5 and recall < 0.5, not disjoint (mostly off-egg, egg mostly missed)
+bleed_overseg           56 ( 50.9%)  mean_iou=0.228  median_pred/gt_area=4.21
+    definition: precision < 0.5 and recall >= 0.5 (egg captured, prediction much larger)
+partial_underseg         7 (  6.4%)  mean_iou=0.339  median_pred/gt_area=0.32
+    definition: precision >= 0.5 and recall < 0.5 (prediction on egg but covers only part of it)
+mixed_moderate           1 (  0.9%)  mean_iou=0.415  median_pred/gt_area=1.14
+    definition: precision >= 0.5 and recall >= 0.5 but IoU < 0.5
+
+======================================================================
+Members by category (sorted by IoU, lowest first)
+======================================================================
+
+[pass] (26)
+  not_damaged_161_jpg.rf.fd216aa5e11e147fc1527478cceae94e  iou=0.515  p=0.632  r=0.736  pred/gt=1.16
+  not_damaged_160_jpg.rf.64b7834918be5b72840ecee1e390157e  iou=0.527  p=0.995  r=0.529  pred/gt=0.53
+  not_damaged_17_jpg.rf.7298154b15cab2942d3351120a4337d5  iou=0.593  p=0.597  r=0.989  pred/gt=1.66
+  not_damaged_101_jpg.rf.479d12a2b41a5ec6d718dcdabd14b0c9  iou=0.605  p=0.607  r=0.995  pred/gt=1.64
+  not_damaged_29_jpg.rf.b15d563685f9a249436a706a816cec07  iou=0.667  p=0.923  r=0.707  pred/gt=0.77
+  not_damaged_78_jpg.rf.d3a6e8624d192abc58ff7df9d5781bb5  iou=0.709  p=0.710  r=0.999  pred/gt=1.41
+  not_damaged_100_jpg.rf.5d780a6024004fa2f68741fa56ddf4c9  iou=0.729  p=0.996  r=0.731  pred/gt=0.73
+  not_damaged_142_jpg.rf.5b29be6bd5a6cfc192f51a5b580c1a07  iou=0.766  p=0.920  r=0.820  pred/gt=0.89
+  not_damaged_157_jpg.rf.b244a82199f2158510ccf485e54d98a2  iou=0.787  p=1.000  r=0.787  pred/gt=0.79
+  not_damaged_55_jpg.rf.73873084ba51dd4e5ab40033b6003190  iou=0.817  p=0.997  r=0.819  pred/gt=0.82
+  not_damaged_110_jpg.rf.2de10ae949146248df94e52f9065bdd8  iou=0.862  p=0.993  r=0.867  pred/gt=0.87
+  not_damaged_1_jpg.rf.d74c98a14f068b48c1f58fd573361f1f  iou=0.882  p=0.977  r=0.900  pred/gt=0.92
+  not_damaged_2_jpg.rf.a4629fbffb9457cd3dda5a1dfc6e5365  iou=0.886  p=0.992  r=0.892  pred/gt=0.90
+  not_damaged_10_jpg.rf.2347ffa54eea250ab240def10a3eb78f  iou=0.891  p=0.895  r=0.994  pred/gt=1.11
+  not_damaged_148_jpg.rf.8a3e1c0e1dae236abe0e9a75a4882bda  iou=0.891  p=0.893  r=0.998  pred/gt=1.12
+  not_damaged_151_jpg.rf.34a8c4ae80d0863cd228120235134ae2  iou=0.896  p=0.998  r=0.898  pred/gt=0.90
+  not_damaged_19_jpg.rf.b68555e4ce0c87f7f6a9f9d441a47a08  iou=0.903  p=0.997  r=0.906  pred/gt=0.91
+  not_damaged_141_jpg.rf.67be7a06282cf025b53162b5a9df15ff  iou=0.936  p=0.997  r=0.940  pred/gt=0.94
+  not_damaged_15_jpg.rf.c7c6c90e16bcccd97696ed56f741d670  iou=0.944  p=0.999  r=0.945  pred/gt=0.95
+  not_damaged_155_jpg.rf.a65395f65d93bcd6cbf6bdab6d94e551  iou=0.953  p=0.989  r=0.964  pred/gt=0.97
+  not_damaged_158_jpg.rf.344b69defda5c12d2f73f77ab479c93c  iou=0.974  p=0.991  r=0.983  pred/gt=0.99
+  not_damaged_16_jpg.rf.133bb95ee3eacad7aecf2ab4cd1e1ff4  iou=0.975  p=0.976  r=1.000  pred/gt=1.02
+  not_damaged_115_jpg.rf.5e04f25a50022be8a5f0dbcfe42bc26f  iou=0.981  p=0.995  r=0.986  pred/gt=0.99
+  not_damaged_49_jpg.rf.78a86245d3715c60d39d47045a323711  iou=0.985  p=0.985  r=1.000  pred/gt=1.01
+  not_damaged_130_jpg.rf.7289d26d022f33aa74b3517f40d6a127  iou=0.993  p=0.998  r=0.994  pred/gt=1.00
+  not_damaged_34_jpg.rf.4be2a53f051e4372100c90f2d36ea129  iou=0.994  p=0.998  r=0.997  pred/gt=1.00
+
+[total_miss] (2)
+  not_damaged_102_jpg.rf.8d754cbc174c6cb6fb1b5c1929edcbb1  iou=0.000  p=1.000  r=0.000  pred/gt=0.00
+  not_damaged_134_jpg.rf.fb4e9c442527db9e71d4a95584773fa2  iou=0.000  p=1.000  r=0.000  pred/gt=0.00
+
+[disjoint_wrong_region] (13)
+  not_damaged_108_jpg.rf.de0bd2447ade8d891625ac0dd055667a  iou=0.000  p=0.000  r=0.000  pred/gt=1.47
+  not_damaged_123_jpg.rf.11d40a86277d3ab3fce1c5c6cbf14db0  iou=0.000  p=0.000  r=0.000  pred/gt=0.23
+  not_damaged_139_jpg.rf.9f18c65b30035092401a5281a03b7124  iou=0.000  p=0.000  r=0.000  pred/gt=3.08
+  not_damaged_154_jpg.rf.1ad087e824bbaae4f2c8218624f83c1a  iou=0.000  p=0.000  r=0.000  pred/gt=2.91
+  not_damaged_39_jpg.rf.81c4c633444db832268298ddae1010d6  iou=0.000  p=0.000  r=0.000  pred/gt=1.38
+  not_damaged_42_jpg.rf.6626de5325fbf9ad4fec739b2a4e29f3  iou=0.000  p=0.000  r=0.000  pred/gt=10.18
+  not_damaged_44_jpg.rf.a4dbaabec5b64e4c34d874a6870964be  iou=0.000  p=0.000  r=0.000  pred/gt=0.04
+  not_damaged_52_jpg.rf.d62840582d63156f7e346b41ab8895d5  iou=0.000  p=0.000  r=0.000  pred/gt=0.15
+  not_damaged_95_jpg.rf.0806f2b78a5bc571cd36453998060b58  iou=0.000  p=0.000  r=0.000  pred/gt=0.29
+  not_damaged_45_jpg.rf.afe41bdac424f6a6b81d8a809fdf73e0  iou=0.000  p=0.000  r=0.001  pred/gt=4.49
+  not_damaged_128_jpg.rf.95a7ef96dcc9e14fa7137708df6f2e60  iou=0.000  p=0.000  r=0.001  pred/gt=2.87
+  not_damaged_20_jpg.rf.5e8498e31e0e596d64f6185f7c56534f  iou=0.000  p=0.002  r=0.000  pred/gt=0.24
+  not_damaged_24_jpg.rf.a557aeb67c480dc55479509a77b4e160  iou=0.002  p=0.008  r=0.003  pred/gt=0.38
+
+[mislocalized] (5)
+  not_damaged_28_jpg.rf.a7e8555e9e2b27a796da5d502582db24  iou=0.043  p=0.046  r=0.384  pred/gt=8.26
+  not_damaged_36_jpg.rf.4968de1c56728d9f7325771e3a7f7e3e  iou=0.075  p=0.098  r=0.246  pred/gt=2.52
+  not_damaged_113_jpg.rf.75e3389c0809c7c0f42fbfd25219e65e  iou=0.089  p=0.106  r=0.359  pred/gt=3.37
+  not_damaged_114_jpg.rf.7ccf87a5610bafd963468463b2e2907c  iou=0.170  p=0.228  r=0.400  pred/gt=1.75
+  not_damaged_103_jpg.rf.c0bd961caec5acf3a6582c9cb2551634  iou=0.218  p=0.286  r=0.479  pred/gt=1.67
+
+[bleed_overseg] (56)
+  not_damaged_135_jpg.rf.a6d81ffb82470e031fb3ab469c8f0db2  iou=0.057  p=0.057  r=1.000  pred/gt=17.60
+  not_damaged_13_jpg.rf.60964651b01aed5680a994ecbd7012ea  iou=0.067  p=0.067  r=0.922  pred/gt=13.78
+  not_damaged_124_jpg.rf.931f62b8d40a093039633b898e0e9114  iou=0.071  p=0.071  r=1.000  pred/gt=14.08
+  not_damaged_145_jpg.rf.5147bfde42f30a27504377fd5ef13b05  iou=0.072  p=0.072  r=1.000  pred/gt=13.96
+  not_damaged_32_jpg.rf.15f5702d8602844d8d866d229e674c89  iou=0.076  p=0.076  r=1.000  pred/gt=13.19
+  not_damaged_125_jpg.rf.b19353b1f84dcbef1ec088b850927bb3  iou=0.079  p=0.079  r=0.998  pred/gt=12.64
+  not_damaged_116_jpg.rf.43fecd96347e2129115fceed65986cc9  iou=0.086  p=0.086  r=1.000  pred/gt=11.63
+  not_damaged_122_jpg.rf.b44d8e5a76cadeff9b2d8eaa85309d09  iou=0.086  p=0.093  r=0.563  pred/gt=6.08
+  not_damaged_50_jpg.rf.b9e65c2fcdb435269f67c9d7ade8ca89  iou=0.095  p=0.102  r=0.578  pred/gt=5.66
+  not_damaged_14_jpg.rf.dc96559078b03433d2b65e5055904af1  iou=0.099  p=0.101  r=0.829  pred/gt=8.24
+  not_damaged_11_jpg.rf.95e1bc4944748cfd1a56fe23a42b6ae8  iou=0.112  p=0.112  r=0.951  pred/gt=8.48
+  not_damaged_12_jpg.rf.339e366cebec5c32e751e8500aa12f3e  iou=0.115  p=0.116  r=0.964  pred/gt=8.32
+  not_damaged_117_jpg.rf.d25ded9e7408f9b89b3cfb3de581f6a6  iou=0.119  p=0.126  r=0.696  pred/gt=5.54
+  not_damaged_18_jpg.rf.bc3fb0b05f8e3f72d25ae44db40362c0  iou=0.122  p=0.126  r=0.781  pred/gt=6.18
+  not_damaged_147_jpg.rf.f96813b608c83c8ca5fadbe68c1eefdb  iou=0.126  p=0.142  r=0.524  pred/gt=3.68
+  not_damaged_150_jpg.rf.c58ad3cfc0417f557be06b685008bb60  iou=0.137  p=0.137  r=0.993  pred/gt=7.27
+  not_damaged_149_jpg.rf.c3c35299246e8c667ee33f02855a6e99  iou=0.137  p=0.138  r=0.969  pred/gt=7.04
+  not_damaged_104_jpg.rf.3bf8cb51d5ad8934390c8e2c3b79b32f  iou=0.152  p=0.152  r=0.973  pred/gt=6.39
+  not_damaged_5_jpg.rf.395cc7ec9b988f25e77e403ef537737e  iou=0.185  p=0.185  r=0.999  pred/gt=5.40
+  not_damaged_40_jpg.rf.71ddd6e202abb9dd3dd4721b6d408cba  iou=0.189  p=0.190  r=0.959  pred/gt=5.04
+  not_damaged_156_jpg.rf.6ae4742599d61d6120e5beb5d38bcf2e  iou=0.203  p=0.203  r=0.998  pred/gt=4.92
+  not_damaged_152_jpg.rf.a57edb18d395ce87e23f7abccbd1ad69  iou=0.203  p=0.205  r=0.948  pred/gt=4.62
+  not_damaged_164_jpg.rf.aeab74f44b77d69cb4884f8a55d4a5b8  iou=0.212  p=0.226  r=0.771  pred/gt=3.42
+  not_damaged_159_jpg.rf.2bc51aa920c0031f8e311c52c762cded  iou=0.212  p=0.214  r=0.967  pred/gt=4.51
+  not_damaged_6_jpg.rf.1b79fa07c23ef838f19c9a226c9022f5  iou=0.217  p=0.217  r=0.998  pred/gt=4.60
+  not_damaged_118_jpg.rf.3e17ba84bcb3b57ebbf743b145c5ae27  iou=0.218  p=0.219  r=0.978  pred/gt=4.46
+  not_damaged_112_jpg.rf.2ecb081cd9d32a7ff8c9f4db24e911b9  iou=0.224  p=0.224  r=1.000  pred/gt=4.46
+  not_damaged_126_jpg.rf.2c3342cf9ca7ab55f6682ef198e98bbd  iou=0.225  p=0.225  r=1.000  pred/gt=4.44
+  not_damaged_153_jpg.rf.ea842e70f08e63e69bbcc74f1bc143a8  iou=0.227  p=0.227  r=1.000  pred/gt=4.40
+  not_damaged_163_jpg.rf.eee95b2e3a2af8b228d81075f9b2f24d  iou=0.230  p=0.230  r=1.000  pred/gt=4.35
+  not_damaged_129_jpg.rf.3cee5e92daed138fcdc13d9aa62c2785  iou=0.241  p=0.243  r=0.970  pred/gt=3.99
+  not_damaged_138_jpg.rf.4db6e0e16ddec73ff527d4efbb119f7a  iou=0.245  p=0.245  r=1.000  pred/gt=4.08
+  not_damaged_111_jpg.rf.d56bdd5f452dfc3935b4d6962ed33309  iou=0.247  p=0.247  r=0.998  pred/gt=4.04
+  not_damaged_119_jpg.rf.6758625c4b939166ca105d0509fc569e  iou=0.255  p=0.271  r=0.810  pred/gt=2.99
+  not_damaged_106_jpg.rf.4ab043b322cc9e55bdf788a4d69ae74b  iou=0.268  p=0.268  r=1.000  pred/gt=3.73
+  not_damaged_107_jpg.rf.8497e164672ad2319ef9ea157023304e  iou=0.269  p=0.275  r=0.924  pred/gt=3.36
+  not_damaged_43_jpg.rf.66c31342150e751c30214786e72c8683  iou=0.269  p=0.291  r=0.782  pred/gt=2.69
+  not_damaged_127_jpg.rf.3a541bab7c9e2c2e43c2fdbf391617b5  iou=0.278  p=0.288  r=0.885  pred/gt=3.07
+  not_damaged_143_jpg.rf.ddf38df15f549405285b01245a2ace36  iou=0.284  p=0.284  r=0.998  pred/gt=3.51
+  not_damaged_146_jpg.rf.a7df655e36c3a2faab1c3f248081504d  iou=0.286  p=0.304  r=0.825  pred/gt=2.71
+  not_damaged_33_jpg.rf.0d5860269868461da778265b77ee13b2  iou=0.286  p=0.293  r=0.927  pred/gt=3.16
+  not_damaged_41_jpg.rf.630408063dc3fdfa9a9a7f49e1c1d93c  iou=0.301  p=0.310  r=0.914  pred/gt=2.95
+  not_damaged_37_jpg.rf.73b8cff8dacc52197fd7fdd958397507  iou=0.309  p=0.329  r=0.835  pred/gt=2.54
+  not_damaged_31_jpg.rf.7a5340cc049f94d06b26fa34850535ab  iou=0.314  p=0.333  r=0.850  pred/gt=2.56
+  not_damaged_131_jpg.rf.4ac62f5b18b131bac463f705d0969147  iou=0.317  p=0.328  r=0.904  pred/gt=2.76
+  not_damaged_109_jpg.rf.4d74eb94b1d03ebd3e7c442e58699304  iou=0.322  p=0.344  r=0.831  pred/gt=2.41
+  not_damaged_27_jpg.rf.9eabbf76d6ac2d4caccb38b11e0d28ad  iou=0.327  p=0.327  r=1.000  pred/gt=3.06
+  not_damaged_25_jpg.rf.9a2e0ec799b7cfe4b89e93c2bdf7896f  iou=0.332  p=0.363  r=0.795  pred/gt=2.19
+  not_damaged_120_jpg.rf.dfe91ad8ce891c84e495a8d59bbe01f5  iou=0.343  p=0.357  r=0.900  pred/gt=2.53
+  not_damaged_3_jpg.rf.d68fc8de8607c2495eb8c832c1e24078  iou=0.363  p=0.363  r=1.000  pred/gt=2.75
+  not_damaged_162_jpg.rf.4255a3c6bb6b0a9a625d70a5b51a7df9  iou=0.377  p=0.377  r=1.000  pred/gt=2.65
+  not_damaged_21_jpg.rf.a584f5d526fa26469cc144a40a3134da  iou=0.380  p=0.380  r=0.994  pred/gt=2.61
+  not_damaged_35_jpg.rf.fe6e06dca50c525194a8edc282489e2a  iou=0.383  p=0.474  r=0.666  pred/gt=1.41
+  not_damaged_62_jpg.rf.f34bc5162dc72f41ba60d3f5056cc49b  iou=0.446  p=0.446  r=1.000  pred/gt=2.24
+  not_damaged_30_jpg.rf.48e9261777355fe67139ac1c5eae596b  iou=0.471  p=0.471  r=1.000  pred/gt=2.12
+  not_damaged_22_jpg.rf.427da4fa2858bf0484b607774c6077c5  iou=0.491  p=0.499  r=0.969  pred/gt=1.94
+
+[partial_underseg] (7)
+  not_damaged_140_jpg.rf.5a28b6a69e229bf384854ec1e98b3f19  iou=0.280  p=1.000  r=0.280  pred/gt=0.28
+  not_damaged_144_jpg.rf.a9435fb1769a2350dbdd400bcc46a4eb  iou=0.283  p=1.000  r=0.283  pred/gt=0.28
+  not_damaged_105_jpg.rf.6b94b57d4e4cb521abbec55bb95c2a76  iou=0.301  p=0.955  r=0.305  pred/gt=0.32
+  not_damaged_121_jpg.rf.0506fe180f5fed88ae65348130fb5192  iou=0.305  p=0.988  r=0.306  pred/gt=0.31
+  not_damaged_133_jpg.rf.a386f448c321cfb45a902bab446a0536  iou=0.322  p=0.995  r=0.322  pred/gt=0.32
+  not_damaged_136_jpg.rf.b91466d91f3e0005beb0e42acc9d5b83  iou=0.430  p=0.994  r=0.431  pred/gt=0.43
+  not_damaged_132_jpg.rf.5deff743ad11d33750171617e116bd7a  iou=0.449  p=0.999  r=0.450  pred/gt=0.45
+
+[mixed_moderate] (1)
+  not_damaged_4_jpg.rf.36c78b63ea4710d9642651ac3292fd58  iou=0.415  p=0.550  r=0.629  pred/gt=1.14

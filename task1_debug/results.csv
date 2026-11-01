@@ -1,0 +1,6 @@
+image,stem,split,num_eggs,used_fallback,areas,det_scores,sam_scores
+not_damaged_101_jpg.rf.479d12a2b41a5ec6d718dcdabd14b0c9.jpg,not_damaged_101_jpg.rf.479d12a2b41a5ec6d718dcdabd14b0c9,dev,1,False,[91352],[0.872],[1.004]
+not_damaged_125_jpg.rf.b19353b1f84dcbef1ec088b850927bb3.jpg,not_damaged_125_jpg.rf.b19353b1f84dcbef1ec088b850927bb3,dev,1,False,[14238],[0.413],[0.996]
+not_damaged_14_jpg.rf.dc96559078b03433d2b65e5055904af1.jpg,not_damaged_14_jpg.rf.dc96559078b03433d2b65e5055904af1,dev,1,False,[28577],[0.524],[1.003]
+not_damaged_152_jpg.rf.a57edb18d395ce87e23f7abccbd1ad69.jpg,not_damaged_152_jpg.rf.a57edb18d395ce87e23f7abccbd1ad69,eval,1,False,[22042],[0.851],[1.0]
+not_damaged_153_jpg.rf.ea842e70f08e63e69bbcc74f1bc143a8.jpg,not_damaged_153_jpg.rf.ea842e70f08e63e69bbcc74f1bc143a8,dev,1,False,[35485],[0.464],[1.001]
