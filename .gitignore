@@ -1,12 +1,11 @@
-@"
 .venv/
 __pycache__/
 *.pyc
 *.mp4
 *.avi
-valid/
 train/
+valid/
 test/
-"@ | Set-Content -Encoding ascii .gitignore*.pth
+*.pth
 *.pt
 *.safetensors
